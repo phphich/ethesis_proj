@@ -1,0 +1,38 @@
+{% load static %}
+<br>
+<div class="list-group">
+    <form>
+        <li class="list-group-item  list-group-item-primary bg-primary text-white">
+            <i class="fa fa-list"></i><b> Search:</b></li>
+        <p class="list-group-item text-end" >
+            <input type="text" width="15" >
+            <button type="submit">
+                <i class="fa fa-search"></i>
+            </button>
+        </p>
+    </form>
+</div>
+
+<div class="list-group">
+    <li class="list-group-item  list-group-item-primary bg-primary text-white">
+        <i class="fa fa-list"></i><b> Main:</b></li>
+    <a href="{% url 'home' %}" class="list-group-item list-group-item-action list-group-item-light text-primary">
+        <i class="fa fa-home"></i> Home </a>
+</div>
+<br>
+
+<div class="list-group">
+    <form>
+    <li class="list-group-item  list-group-item-primary bg-primary text-white">
+        <i class="fa fa-user"></i><b> User:</b></li>
+    <p class="list-group-item text-end" >
+            <input type="text" width="15" placeholder="UserName" class="form-control">
+            <input type="password" width="15" placeholder="Password" class="form-control" >
+            <br>
+            <input type="submit" VALUE="Login" class="btn btn-secondary"  >
+
+    </p>
+        </form>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>

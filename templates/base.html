@@ -1,0 +1,39 @@
+{% load static %}
+{% load fontawesome_5 %}
+{% fontawesome_5_static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'stylesheets/bootstrap522/css/bootstrap.css'%}">
+    <script src="{% static 'stylesheets/bootstrap522/js/bootstrap.js'%}" crossorigin="anonymous"></script>
+    <title>DBT - E Thesis</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 bg-primary text-white">
+                {% include 'header.html' %}
+                <br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2 bg-warning text-danger">
+               {% include 'menu.html' %}
+
+            </div>
+            <div class="col-10 bg-white text-primary">
+                {% block content %}
+                {% endblock %}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 bg-secondary text-success">
+                include "footer.html"
+                <br><br>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
