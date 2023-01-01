@@ -20,5 +20,6 @@ from thesisapp import  views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='home'),
-
+    # path('doreporteasy', views.doreporteasy, name='doreporteasy'),
+    path('xreport', views.xreport, name='xreport'),
 ]
